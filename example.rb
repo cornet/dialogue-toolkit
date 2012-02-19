@@ -2,14 +2,13 @@
 
 require 'rubygems'
 require 'dialogue-toolkit'
-require 'httparty'
 
 sms = Dialogue::Toolkit::Sms.new('username','password')
 
 p = {
-  :recipients => '447123456789',
-  :message    => 'hello world',
-  :reply_path => 'SMTP:foo@example.com',
+  :recipients => '447123456789',    # Number to send to
+  :message    => 'hello world',     # Content of the message
+  :reply_path => 'foo@example.com', # Where to send delivery report to
 }
 
 p sms.send(p)

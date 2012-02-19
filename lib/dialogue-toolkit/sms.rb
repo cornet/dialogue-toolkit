@@ -10,6 +10,7 @@ module Dialogue
       
       def initialize(u, p)
         @auth = {:username => u, :password => p}
+
       end
       
       def send(p)
@@ -31,7 +32,6 @@ module Dialogue
 
         end
 
-        puts options
         res = self.class.post('/submit_sm', :basic_auth => @auth, :body => JSON.dump(options))
 
         responses = []

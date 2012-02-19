@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["cornet"]
   s.email       = ["cornet@sheepy.org"]
   s.homepage    = ""
-  s.summary     = %q{Write a gem summary}
-  s.description = %q{Write a gem description}
+  s.summary     = %q{Implentation of the Dialogue Toolkit API}
+  s.description = %q{Send and Receive SMS messages using the Dialogue Toolkit API}
 
   s.rubyforge_project = "dialogue-toolkit"
 

@@ -20,9 +20,9 @@ A ruby gem to send SMS messages through the Dialogue SMS Toolkit API: http://www
     sms = Dialogue::Toolkit::Sms.new('username','password')
     
     params = {
-      :recipients => '447123456789',
-      :message    => 'hello world',
-      :reply_path => 'SMTP:foo@example.com',
+      :recipients => '447123456789',    # Mobile number to send to
+      :message    => 'hello world',     # Message content
+      :reply_path => 'foo@example.com', # Where to send delivery receipt to
     }
     
     p sms.send(params)

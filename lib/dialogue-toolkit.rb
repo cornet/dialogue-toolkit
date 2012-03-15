@@ -1,6 +1,7 @@
-require "dialogue-toolkit/version"
-require "dialogue-toolkit/sms"
-require "dialogue-toolkit/sms/response"
+require 'dialogue-toolkit/version'
+require 'dialogue-toolkit/sms'
+require 'dialogue-toolkit/sms/response'
+require 'dialogue-toolkit/sms/dr'
 
 require 'json'
 

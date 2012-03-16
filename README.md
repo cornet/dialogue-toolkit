@@ -27,6 +27,17 @@ A ruby gem to send SMS messages through the Dialogue SMS Toolkit API: http://www
     
     p sms.send(params)
 
+Handling delivery receipts using [Sinatra][sinatra]
+
+    post '/dr' do
+      resp = Dialogue::Toolkit::Sms::Dr.new(request.body.read)
+      if resp.delivery_report.eql? '00'
+    	"Message Delivered"
+      else
+        "Message Failed"
+       end
+    end
+
 ## References
 
 * Dialogue SMS Toolkit [API Guide][api_guide]

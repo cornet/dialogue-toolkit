@@ -38,6 +38,8 @@ Handling delivery receipts using [Sinatra][sinatra]
        end
     end
 
+ [sinatra]: http://www.sinatrarb.com/
+
 ## References
 
 * Dialogue SMS Toolkit [API Guide][api_guide]
